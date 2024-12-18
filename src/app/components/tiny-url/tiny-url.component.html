@@ -1,0 +1,25 @@
+<div>
+  <h1>TinyURL Service</h1>
+
+  <form [formGroup]="form">
+    <label for="url">URL:</label>
+    <input id="url" formControlName="url" type="text" />
+    <button type="button" (click)="encode()">Acortar</button>
+    <button type="button" (click)="decode()">Original</button>
+  </form>
+
+  <div *ngIf="shortenedUrl">
+    <h3>URL Acortada:</h3>
+    <p>{{ shortenedUrl }}</p>
+  </div>
+
+  <!-- <div *ngIf="originalUrl">
+    <h3>URL Original:</h3>
+    <p>{{ originalUrl }}</p>
+  </div> -->
+
+  <div *ngIf="errorMessage">
+    <h3>Original:</h3>
+    <p>{{ originalUrl }}</p>
+  </div>
+</div>
