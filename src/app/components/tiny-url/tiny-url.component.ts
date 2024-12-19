@@ -78,11 +78,11 @@ export class TinyUrlComponent implements OnInit {
     this.originalUrl = this.originalUrl;
 
     // Verificamos si la URL ingresada es la misma que la acortada previamente
-    if (shortUrl === this.shortenedUrl) {
-      this.showOriginal = true;
-      this.originalUrl = this.originalUrl; // Mostramos la URL original
-    } else {
-      this.errorMessage = 'No se pudo decodificar la URL.';
-    }
+    // if (shortUrl === this.shortenedUrl) {
+    //   this.showOriginal = true;
+    //   this.originalUrl = this.originalUrl; // Mostramos la URL original
+    // } else {
+    //   this.errorMessage = 'No se pudo decodificar la URL.';
+    // }
   }
 }
